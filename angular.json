@@ -26,7 +26,7 @@
               {
                 "input": "src/vehicle-cam-theme.scss"
                } ,
-              "src/styles.css"
+              "src/app/app.component.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true

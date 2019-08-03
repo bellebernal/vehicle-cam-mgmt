@@ -7,7 +7,7 @@ import { MatIconRegistry } from '@angular/material';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['.styles.css'],
+  styleUrls: ['./app.component.css'],
   providers: [MatIconRegistry]
 })
 

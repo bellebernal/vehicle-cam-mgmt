@@ -6,7 +6,7 @@
     <div class="row">
       <div class="create-container">
         <p>To pair an available camera with an available vehicle, enter the inmat-form-fieldation below:</p>
-        <form class="create-assignment-form" #postAssignment="ngForm" (ngSubmit)="onCreateAssignment(postAssignment.value)">
+        <form class="create-assignment-form" (ngSubmit)="onCreateAssignment(postAssignment.value)">
           <mat-form-field class="form-field-item">
             <label for="camera"></label>
             <textarea

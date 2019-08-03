@@ -18,6 +18,12 @@
     width: 100%;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 textarea {
     top: 10px;
     margin-top: 10px;
