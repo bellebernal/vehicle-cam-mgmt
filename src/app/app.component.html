@@ -1,0 +1,84 @@
+<div class="container">
+    <mat-toolbar color="primary">
+        <span>Vehicle and Camera Data Tool</span>
+    </mat-toolbar>
+    <mat-divider color="primiary"></mat-divider>
+    <div class="row">
+      <div class="create-container">
+        <p>To pair an available camera with an available vehicle, enter the inmat-form-fieldation below:</p>
+        <form class="create-assignment-form" #postAssignment="ngForm" (ngSubmit)="onCreateAssignment(postAssignment.value)">
+          <mat-form-field class="form-field-item">
+            <label for="camera"></label>
+            <textarea
+              id="mat-form-field-control"
+              required
+              ngModel
+              matInput placeholder="Enter a camera ID">
+            </textarea>
+          </mat-form-field>
+          <mat-form-field class="form-field-item">
+            <label for="vehicle"></label>
+            <textarea 
+              id="mat-form-field-control"
+              required
+              ngModel
+              matInput placeholder="Enter a vehicle ID">
+            </textarea>
+          </mat-form-field>
+          <p>Upon creating this pairing a unique assignment ID, date/time stamp, and a status of active will be designated.</p>
+          <button mat-raised-button
+            type="submit"
+            [disabled]="!postAssignment.valid"
+            color="accent">
+            Create Assignmemt
+          </button>
+        </form>
+      </div>
+    </div>
+    <mat-divider color="accent"></mat-divider>
+    <div class="row">
+        <div class="fetch-container">
+          <button mat-raised-button color="accent" (click)="onFetchData()">Fetch Data Log</button>
+        </div>
+    </div>
+    <div class="row">
+      <div class="display-fetch">
+          <mat-list class="list-group" *ngFor="let data of vehCamData">
+            <mat-list-item class="list-group-item">
+              <p>database key: {{ data.key }}</p>
+              <p>assignment_id: {{ data.assignmentId }}</p>
+              <p>camera_id: {{ data.cameraId }}</p>
+              <p>camera_device_number: {{ data.cameraDeviceNo }}</p>
+              <p>vehicle_id: {{ data.vehicleId }}</p>
+              <p>vehicle_name: {{ data.vehicleName }}</p>
+              <p>date_created: {{ data.dateCreated }}</p>
+              <p>deleted: {{ data.deleted }}</p>
+            </mat-list-item>
+          </mat-list>
+      </div>
+    </div>
+    <mat-divider color="accent"></mat-divider>
+    <div class="row">
+      <div class="search-container">
+        <p>To search current log of all cameras, vehicles and assignment pairings, enter a camera device number or vehilce name below:</p>
+        <mat-form-field class="search-box">
+          <input type="text" class="search" placeholder="Search by Camera No. or Verhicle Name">
+          <mat-icon>search</mat-icon>
+          <mat-list class="search-results" *ngFor="let result of results">
+            <mat-list-item class="search-result-item">
+                <p>database key: {{ data.key }}</p>
+                <p>assignment_id: {{ data.assignmentId }}</p>
+                <p>camera_id: {{ data.cameraId }}</p>
+                <p>camera_device_number: {{ data.cameraDeviceNo }}</p>
+                <p>vehicle_id: {{ data.vehicleId }}</p>
+                <p>vehicle_name: {{ data.vehicleName }}</p>
+                <p>date_created: {{ data.dateCreated }}</p>
+                <p>deleted: {{ data.deleted }}</p>
+            </mat-list-item>
+          </mat-list>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  
+  

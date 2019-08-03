@@ -1,0 +1,86 @@
+[
+    {
+      "cameraId": "820127e2",
+      "cameraDeviceNo": "CANON"
+    },
+    {
+      "cameraId": "af867b60",
+      "cameraDeviceNo": "NIKON"
+    },
+    {
+      "cameraId": "7a347052",
+      "cameraDeviceNo": "PENTAX"
+    },
+    {
+      "cameraId": "10e396c5",
+      "cameraDeviceNo": "SONY"
+    },
+    {
+      "cameraId": "962a9ea3",
+      "cameraDeviceNo": "OLYMPUS"
+    },
+    {
+      "cameraId": "ccfaa34d",
+      "cameraDeviceNo": "FUJIFILM"
+    },
+    {
+      "cameraId": "53f4b885",
+      "cameraDeviceNo": "GOPRO"
+    },
+    {
+      "vehicleId": "2fc5da62",
+      "vehicleName": "ACURA1"
+    },
+    {
+      "vehicleId": "a74624cc",
+      "vehicleName": "ACURA2"
+    },
+    {
+      "vehicleId": "16874a7d",
+      "vehicleName": "ACURA3"
+    },
+    {
+      "vehicleId": "b1a7db04",
+      "vehicleName": "ACURA4"
+    },
+    {
+      "vehicleId": "887e7aea",
+      "vehicleName": "ACURA5"
+    },
+    {
+      "vehicleId": "0e689fc6",
+      "vehicleName": "ACURA6"
+    },
+    {
+      "vehicleId": "46072981",
+      "vehicleName": "ACURA7"
+    },
+    {
+      "assignmentId": "6714116b",
+      "cameraId": "820127e2",
+      "vehicleId": "2fc5da62",
+      "dateCreated": "2019-06-11T20:51:31.530Z",
+      "deleted": "false"
+    },
+    {
+      "assignmentId": "e47e9d8f",
+      "cameraId": "af867b60",
+      "vehicleId": "a74624cc",
+      "dateCreated": "2019-05-10T20:51:31.530Z",
+      "deleted": "false"
+    },
+    {
+      "assignmentId": "80b9eff1",
+      "cameraId": "7a347052",
+      "vehicleId": "16874a7d",
+      "dateCreated": "2019-04-21T20:51:31.530Z",
+      "deleted": "false"
+    },
+    {
+      "assignmentId": "58eca4ab",
+      "cameraId": "10e396c5",
+      "vehicleId": "b1a7db04",
+      "dateCreated": "2019-03-14T20:51:31.530Z",
+      "deleted": "false"
+    }
+]
