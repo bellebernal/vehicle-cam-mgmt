@@ -8,10 +8,12 @@ import { MatDividerModule } from '@angular/material/divider';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CreateAssignmentComponent } from './create-assignment/create-assignment.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CreateAssignmentComponent
   ],
   imports: [
     BrowserModule,
